@@ -40,6 +40,7 @@ section.hero .content-container .title {
 }
 section.hero .content-container .sub-text {
 	color: var(--white);
+	font-size: 0.9rem;
 }
 @media all and (min-width: 600px) {
 	section.hero .content-container .title {

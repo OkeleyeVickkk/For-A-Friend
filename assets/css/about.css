@@ -89,9 +89,19 @@ section.technicians .grid-container {
 	justify-content: center;
 	gap: 2rem;
 	flex-wrap: wrap;
+	padding: 0;
+}
+@media all and (max-width: 600px) {
+	section.technicians .grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 section.technicians .grid-container .t_9qtsn {
 	text-align: center;
+}
+section.technicians .grid-container .t-Name {
+	margin-top: 10px;
 }
 section.technicians .grid-container .image-container {
 	margin-inline: auto;
@@ -157,8 +167,13 @@ section.i_section ._Lq30ef3J b {
 }
 section.i_section ._Rq30ef3J .grid-it {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1fr;
 	gap: 1rem;
+}
+@media all and (min-width: 768px) {
+	section.i_section ._Rq30ef3J .grid-it {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 section.i_section ._Rq30ef3J .grid-it .each-r-out {
 	box-shadow: var(--box-shadow-3);

@@ -27,7 +27,7 @@
 }
 .footer__inner {
 	background-color: var(--grey);
-	padding: 4rem 0 2rem;
+	padding: 4rem 0.5rem 2rem;
 }
 .footer_item_container {
 	row-gap: 1.5rem;

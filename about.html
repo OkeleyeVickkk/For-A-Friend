@@ -1,0 +1,549 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About Us | Nail Tech</title>
+		<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css.map" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/header.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/about.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/general.css" />
+	</head>
+	<body>
+		<div class="body__inner__wrapper">
+			<!-- header @s -->
+			<header class="position-relative nav__wrapper">
+				<div class="row col-12 align-items-center justify-content-between m-0">
+					<div class="logo d-flex align-items-center col-4 col-md-6 col-lg-2 p-0">
+						<a href="">
+							<img src="./assets/img/logo-fake.svg" alt="" class="img-fluid" />
+						</a>
+					</div>
+					<div class="links d-none d-lg-flex align-items-center justify-content-center col-4 col-md-6 col-lg-5 p-0">
+						<a href=""><span>Nail Technician</span></a>
+						<a href=""><span>Shop</span></a>
+						<a href=""><span>About us</span></a>
+					</div>
+					<div class="icons d-flex align-items-center col-4 col-md-6 col-lg-2 p-0">
+						<button type="button" class="icon-item" id="search-button-trigger">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="1.5"
+									d="m17 17l4 4M3 11a8 8 0 1 0 16 0a8 8 0 0 0-16 0Z" />
+							</svg>
+						</button>
+						<button type="button" class="icon-item" id="cart-button-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+								<path
+									fill="currentColor"
+									d="M96 216a16 16 0 1 1-16-16a16 16 0 0 1 16 16Zm88-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16Zm47.65-125.65l-28.53 92.71A23.89 23.89 0 0 1 180.18 184H84.07A24.11 24.11 0 0 1 61 166.59L24.82 40H8a8 8 0 0 1 0-16h16.82a16.08 16.08 0 0 1 15.39 11.6L48.32 64H224a8 8 0 0 1 7.65 10.35ZM213.17 80H52.89l23.49 82.2a8 8 0 0 0 7.69 5.8h96.11a8 8 0 0 0 7.65-5.65Z" />
+							</svg>
+						</button>
+						<a href="" class="icon-item">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+									<path
+										d="M8.25 9a3.75 3.75 0 1 1 7.5 0a3.75 3.75 0 0 1-7.5 0ZM12 6.75a2.25 2.25 0 1 0 0 4.5a2.25 2.25 0 0 0 0-4.5Z" />
+									<path
+										d="M1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12S17.937 22.75 12 22.75S1.25 17.937 1.25 12ZM12 2.75a9.25 9.25 0 0 0-6.558 15.773c.18-.973.535-1.89 1.246-2.628C7.753 14.791 9.454 14.25 12 14.25c2.546 0 4.247.541 5.311 1.645c.712.738 1.066 1.655 1.247 2.629A9.25 9.25 0 0 0 12 2.75Zm5.194 16.905c-.102-1.212-.365-2.1-.962-2.719c-.65-.673-1.853-1.186-4.232-1.186c-2.379 0-3.582.513-4.232 1.186c-.597.62-.86 1.507-.962 2.72A9.207 9.207 0 0 0 12 21.25a9.208 9.208 0 0 0 5.194-1.595Z" />
+								</g>
+							</svg>
+						</a>
+						<button type="button" class="d-lg-none icon-item" id="menu-button-trigger">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-width="1.5"
+									d="M4 7h3m13 0h-9m9 10h-3M4 17h9m-9-5h16" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="position-absolute search-bar-container">
+					<form action="" class="d-flex align-items-center">
+						<div class="d-flex align-items-center flex-grow-1">
+							<input type="search" aria-label="search" class="form-control" id="search-input" placeholder="Enter search..." />
+							<button type="submit" class="search">
+								<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+									<path
+										fill="currentColor"
+										d="m221.66 133.66l-72 72a8 8 0 0 1-11.32-11.32L196.69 136H40a8 8 0 0 1 0-16h156.69l-58.35-58.34a8 8 0 0 1 11.32-11.32l72 72a8 8 0 0 1 0 11.32Z" />
+								</svg>
+							</button>
+						</div>
+						<button type="button" id="close-search-trigger-button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path
+									fill="currentColor"
+									d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275L12 13.4Z" />
+							</svg>
+						</button>
+					</form>
+				</div>
+				<div class="position-absolute w-75 d-lg-none" id="mobile-menu">
+					<ul>
+						<li><a href="">Nail Technician</a></li>
+						<li><a href="">Shop</a></li>
+						<li><a href="">About us</a></li>
+					</ul>
+				</div>
+			</header>
+			<!-- header @e -->
+			<!-- main content @s -->
+			<main>
+				<div class="content__wrapper">
+					<!-- individual section @s -->
+					<section class="hero i_section">
+						<div class="row col-12 m-0 align-items-center justify-content-between">
+							<div class="content-container col-10 col-md-6 mx-auto">
+								<div class="content-container text-center">
+									<h1 class="title">Who We Are</h1>
+									<span class="sub-text">
+										Tech nails is a global fashion brand that makes press on nails majorly to beautify the female fingernail and
+										as well as making them express their thoughts and ideas while they slay inform of nail art and calligraphy
+									</span>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- individual section @e -->
+					<!-- individual section @s -->
+					<section class="_w_w_a i_section">
+						<div class="container p-0">
+							<header class="mx-auto col-md-6 text-center">
+								<h1><b>Who We Are</b></h1>
+							</header>
+							<div class="row col-12 m-0 align-items-center justify-content-center">
+								<!-- each testimony @s -->
+								<div class="col-md-6 col-lg-4 p-0">
+									<div class="p-3">
+										<div class="_w_w_a_container">
+											<div class="_w_w_a_icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="640" height="512" viewBox="0 0 640 512">
+													<path
+														fill="currentColor"
+														d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6c40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32S208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z" />
+												</svg>
+											</div>
+											<div class="_w_w_a_content">
+												<div class="_w_w_a_testifier">
+													<span class="_w_w_a_title">Nail tech community</span>
+												</div>
+												<span class="_w_w_a_text-value">
+													Community that helps nail technicians connect to large stream of clients, sell nail arts and
+													thrive.
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- each testimony @e -->
+								<!-- each testimony @s -->
+								<div class="col-md-6 col-lg-4 p-0">
+									<div class="p-3">
+										<div class="_w_w_a_container">
+											<div class="_w_w_a_icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+													<g fill="none" stroke="currentColor" stroke-width="4">
+														<path
+															stroke-linecap="round"
+															stroke-linejoin="round"
+															d="M44 24c0 11.046-8.954 20-20 20S4 35.046 4 24S12.954 4 24 4" />
+														<path
+															d="m38 9.472l.343 1.056h1.11l-.898.652l.343 1.056l-.898-.652l-.898.652l.343-1.056l-.898-.652h1.11L38 9.472Z" />
+														<rect
+															width="12"
+															height="24"
+															x="18"
+															y="13"
+															stroke-linecap="round"
+															stroke-linejoin="round"
+															rx="6" />
+														<path
+															stroke-linecap="round"
+															stroke-linejoin="round"
+															d="M18 25c-2 0-5 2.118-5 6v9.784M30 25c2 0 5 2.118 5 6v9.5" />
+													</g>
+												</svg>
+											</div>
+											<div class="_w_w_a_content">
+												<div class="_w_w_a_testifier">
+													<span class="_w_w_a_title">Customized nail art</span>
+												</div>
+												<span class="_w_w_a_text-value">
+													We empower women with customized artistic writings on their nails to remind them of the winner
+													within
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- each testimony @e -->
+								<!-- each testimony @s -->
+								<div class="col-md-6 col-lg-4 p-0">
+									<div class="p-3">
+										<div class="_w_w_a_container">
+											<div class="_w_w_a_icon">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+													<path
+														fill="currentColor"
+														d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z" />
+												</svg>
+											</div>
+											<div class="_w_w_a_content">
+												<div class="_w_w_a_testifier">
+													<span class="_w_w_a_title">Nail art design store</span>
+												</div>
+												<span class="_w_w_a_text-value">
+													We give nail technicians a platform to sell premium nail art of different types
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- each testimony @e -->
+							</div>
+						</div>
+					</section>
+					<!-- individual section @e -->
+					<!-- individual section @s -->
+					<section class="technicians i_section">
+						<div class="container p-lg-0">
+							<header class="mx-auto col-md-6 text-center">
+								<h2>Meet Nail Technicians from our community</h2>
+								<span class="my-4 sub-text">
+									We have over 100 nail technicians creating, thriving and connecting with clients steadily in our community
+								</span>
+							</header>
+							<div class="container p-lg-0">
+								<div class="row col-12 m-0 align-items-center justify-content-center">
+									<div class="grid-container">
+										<div class="t_9qtsn">
+											<div class="image-container">
+												<img src="./assets/img/vickkk.jpg" alt="" class="img-fluid" />
+											</div>
+											<div class="t-Name">
+												<b>Martha Kass</b>
+											</div>
+										</div>
+										<div class="t_9qtsn">
+											<div class="image-container">
+												<img src="./assets/img/vickkk.jpg" alt="" class="img-fluid" />
+											</div>
+											<div class="t-Name">
+												<b>Martha Kass</b>
+											</div>
+										</div>
+										<div class="t_9qtsn">
+											<div class="image-container">
+												<img src="./assets/img/vickkk.jpg" alt="" class="img-fluid" />
+											</div>
+											<div class="t-Name">
+												<b>Martha Kass</b>
+											</div>
+										</div>
+										<div class="t_9qtsn">
+											<div class="image-container">
+												<img src="./assets/img/vickkk.jpg" alt="" class="img-fluid" />
+											</div>
+											<div class="t-Name">
+												<b>Martha Kass</b>
+											</div>
+										</div>
+									</div>
+									<div class="col-6 mx-auto text-center mt-4 pt-4">
+										<a href="" class="view_more"> View more </a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- individual section @e -->
+					<!-- individual section @s -->
+					<section class="contact i_section">
+						<div class="container p-lg-0">
+							<header class="mx-auto col-md-8 text-center">
+								<h1>
+									Do you have questions? <br />
+									<b>Contact us</b>
+								</h1>
+							</header>
+							<div class="row col-12 m-0 align-items-center justify-content-center">
+								<div class="image-container p-0 col-md-6 col-lg-5 text-center text-lg-start">
+									<img src="./assets/img/customer-care.png" alt="" class="img-fluid" />
+								</div>
+								<div class="form-container p-0 col-md-6 col-lg-5">
+									<form action="">
+										<div class="form__inner">
+											<div class="form-input">
+												<label for="name" class="form-label">Email address</label>
+												<input type="text" class="form-control" id="name" placeholder="Enter your fullname" />
+											</div>
+											<div class="form-input">
+												<label for="email-address" class="form-label">Email</label>
+												<input type="email" class="form-control" id="email-address" placeholder="Enter your email" />
+											</div>
+											<div class="form-input">
+												<label for="message" class="form-label">Message</label>
+												<textarea class="form-control" id="message" rows="3" placeholder="Write your message"></textarea>
+											</div>
+										</div>
+										<div class="submit-btn">
+											<button type="submit">Send</button>
+										</div>
+									</form>
+								</div>
+								<div class="_bottomaqe3 col-md-10 mx-auto row col-12 p-0 align-items-center justify-content-between">
+									<div class="_Lq30ef3J p-0 col-md-4">
+										<h2>
+											Want an easier route? <br />
+											<b>Send a DM</b>
+										</h2>
+									</div>
+									<div class="_Rq30ef3J p-0 col-md-7">
+										<div class="grid-it">
+											<a href="" class="each-r-out">
+												<img
+													src="./assets/img/1298775_whatsapp_chat_sms_social media_talk_icon.png"
+													alt=""
+													class="img-fluid" />
+												<span class="value">+2349073734025</span>
+											</a>
+											<a href="" class="each-r-out">
+												<img src="./assets/img/317720_social media_tweet_twitter_social_icon.png" alt="" class="img-fluid" />
+												<span class="value">@I_am_Justus</span>
+											</a>
+											<a href="" class="each-r-out">
+												<img src="./assets/img/5296499_fb_facebook_facebook logo_icon.png" alt="" class="img-fluid" />
+												<span class="value">@okeleyevickkk</span>
+											</a>
+											<a href="" class="each-r-out">
+												<img src="./assets/img/6929237_instagram_icon.png" alt="" class="img-fluid" />
+												<span class="value">@vickkk</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- individual section @e -->
+					<!-- individual section @s -->
+					<section class="testimony i_section">
+						<div class="container p-0">
+							<header class="mx-auto col-10 col-md-6 text-center">
+								<h2>Testimonies from Nail technicians in our community</h2>
+							</header>
+							<div class="row col-12 m-0 align-items-center justify-content-center">
+								<!-- each testimony @s -->
+								<div class="col-md-6 col-lg-4 p-0">
+									<div class="p-3">
+										<div class="t_container">
+											<div class="t_image">
+												<img src="./assets/img/vickkk.jpg" alt="" class="img-fluid" />
+											</div>
+											<div class="t_content">
+												<span class="text-value">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem incidunt debitis perspiciatis
+													necessitatibus quaerat natus inventore quia nesciunt.
+												</span>
+												<div class="t_testifier">
+													<b class="name-value">Okeke John Paul</b>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 p-0">
+									<div class="p-3">
+										<div class="t_container">
+											<div class="t_image">
+												<img src="./assets/img/vickkk.jpg" alt="" class="img-fluid" />
+											</div>
+											<div class="t_content">
+												<span class="text-value">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem incidunt debitis perspiciatis
+													necessitatibus quaerat natus inventore quia nesciunt.
+												</span>
+												<div class="t_testifier">
+													<b class="name-value">Okeke John Paul</b>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 p-0">
+									<div class="p-3">
+										<div class="t_container">
+											<div class="t_image">
+												<img src="./assets/img/vickkk.jpg" alt="" class="img-fluid" />
+											</div>
+											<div class="t_content">
+												<span class="text-value">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem incidunt debitis perspiciatis
+													necessitatibus quaerat natus inventore quia nesciunt.
+												</span>
+												<div class="t_testifier">
+													<b class="name-value">Okeke John Paul</b>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- each testimony @e -->
+							</div>
+						</div>
+					</section>
+					<!-- individual section @e -->
+				</div>
+			</main>
+			<!-- main content @e -->
+
+			<!-- all about footer @s -->
+			<div>
+				<div class="pre__footer">
+					<div class="col-10 col-md-8 col-lg-6 mx-auto text-center">
+						<h2>Subscribe to our newsletter</h2>
+						<div class="mail_subscription">
+							<form action="">
+								<div class="d-flex align-items-center flex-wrap flex-sm-nowrap justify-content-center mt-4">
+									<input
+										type="email"
+										aria-label="email"
+										class="form-control"
+										id="search-input"
+										placeholder="Enter your email address" />
+									<button type="submit" class="search">
+										<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+											<path
+												fill="currentColor"
+												d="M224 50H32a6 6 0 0 0-6 6v136a14 14 0 0 0 14 14h176a14 14 0 0 0 14-14V56a6 6 0 0 0-6-6Zm-96 85.86L47.42 62h161.16ZM101.67 128L38 186.36V69.64Zm8.88 8.14L124 148.42a6 6 0 0 0 8.1 0l13.4-12.28L208.58 194H47.43Zm43.78-8.14L218 69.64v116.72Z" />
+										</svg>
+										<span>Subscribe</span>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<div class="footer__inner">
+						<div class="container p-0">
+							<div class="row col-12 m-0 align-items-start footer_item_container">
+								<div class="p-0 col-lg col-12 col-sm-6">
+									<div class="p-2 logo">
+										<a href="">
+											<img src="./assets/img/logo-fake.svg" alt="" class="img-fluid" />
+										</a>
+									</div>
+								</div>
+								<div class="p-0 col-lg col-12 col-sm-6">
+									<div class="p-2">
+										<h6 class="title">Company</h6>
+										<ul class="sub-links">
+											<li><a href="">About us</a></li>
+											<li><a href="">Contact us</a></li>
+											<li><a href="">FAQ</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="p-0 col-lg col-12 col-sm-6">
+									<div class="p-2">
+										<h6 class="title">Services</h6>
+										<ul class="sub-links">
+											<li><a href="">Shop</a></li>
+											<li><a href="">Book a sessio</a></li>
+											<li><a href="">Nail Tech Connect</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="p-0 col-lg col-12 col-sm-6">
+									<div class="p-2 social_links">
+										<span class="title">Follow us on social media</span>
+										<ul class="sub-links d-flex align-items-center">
+											<a href="">
+												<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+													<path
+														fill="currentColor"
+														d="M216 26H40a14 14 0 0 0-14 14v176a14 14 0 0 0 14 14h176a14 14 0 0 0 14-14V40a14 14 0 0 0-14-14Zm2 190a2 2 0 0 1-2 2H40a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2h176a2 2 0 0 1 2 2ZM94 112v64a6 6 0 0 1-12 0v-64a6 6 0 0 1 12 0Zm88 28v36a6 6 0 0 1-12 0v-36a22 22 0 0 0-44 0v36a6 6 0 0 1-12 0v-64a6 6 0 0 1 12 0v2.11A34 34 0 0 1 182 140ZM98 84a10 10 0 1 1-10-10a10 10 0 0 1 10 10Z" />
+													aaa
+												</svg>
+											</a>
+											<a href="">
+												<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+													<path
+														fill="currentColor"
+														d="M128 26a102 102 0 1 0 102 102A102.12 102.12 0 0 0 128 26Zm6 191.8V150h26a6 6 0 0 0 0-12h-26v-26a18 18 0 0 1 18-18h16a6 6 0 0 0 0-12h-16a30 30 0 0 0-30 30v26H96a6 6 0 0 0 0 12h26v67.8a90 90 0 1 1 12 0Z" />
+												</svg>
+											</a>
+											<a href="">
+												<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+													<path
+														fill="currentColor"
+														d="M128 82a46 46 0 1 0 46 46a46.06 46.06 0 0 0-46-46Zm0 80a34 34 0 1 1 34-34a34 34 0 0 1-34 34Zm48-136H80a54.06 54.06 0 0 0-54 54v96a54.06 54.06 0 0 0 54 54h96a54.06 54.06 0 0 0 54-54V80a54.06 54.06 0 0 0-54-54Zm42 150a42 42 0 0 1-42 42H80a42 42 0 0 1-42-42V80a42 42 0 0 1 42-42h96a42 42 0 0 1 42 42ZM190 76a10 10 0 1 1-10-10a10 10 0 0 1 10 10Z" />
+												</svg>
+											</a>
+											<a href="">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+													<path
+														fill="currentColor"
+														d="M22.5 3.589a.5.5 0 0 0-.755-.43a7.938 7.938 0 0 1-2.266.912a4.662 4.662 0 0 0-3.238-1.29a4.731 4.731 0 0 0-4.707 5.135a11.527 11.527 0 0 1-7.717-4.18a.5.5 0 0 0-.82.067a4.777 4.777 0 0 0-.633 2.377a4.724 4.724 0 0 0 .762 2.579l-.06-.033a.504.504 0 0 0-.497.03a.543.543 0 0 0-.247.458c-.004.118.003.237.022.353a4.692 4.692 0 0 0 1.818 3.383a.5.5 0 0 0-.335.632a4.704 4.704 0 0 0 3.088 3.057a7.998 7.998 0 0 1-4.854.963a.5.5 0 0 0-.332.917A12.442 12.442 0 0 0 8.468 20.5a12.299 12.299 0 0 0 11.986-9.006c.339-1.137.512-2.318.514-3.505c0-.12 0-.245-.003-.372A5.37 5.37 0 0 0 22.5 3.59zm-2.424 3.533a.498.498 0 0 0-.117.349a11.366 11.366 0 0 1-.464 3.741A11.174 11.174 0 0 1 8.468 19.5a11.45 11.45 0 0 1-4.443-.897a8.867 8.867 0 0 0 4.525-1.86a.5.5 0 0 0-.3-.893A3.71 3.71 0 0 1 5.1 14c.425.001.847-.057 1.254-.174a.5.5 0 0 0-.042-.97a3.706 3.706 0 0 1-2.905-2.898a4.72 4.72 0 0 0 1.313.228a.473.473 0 0 0 .492-.35a.5.5 0 0 0-.2-.567a3.696 3.696 0 0 1-1.648-3.09c0-.413.067-.823.2-1.213a12.515 12.515 0 0 0 8.54 3.995a.45.45 0 0 0 .409-.179a.5.5 0 0 0 .103-.434a3.642 3.642 0 0 1-.1-.842A3.73 3.73 0 0 1 16.24 3.78a3.68 3.68 0 0 1 2.71 1.179a.499.499 0 0 0 .462.148a8.94 8.94 0 0 0 2.055-.671a4.92 4.92 0 0 1-1.392 2.686z" />
+												</svg>
+											</a>
+										</ul>
+									</div>
+								</div>
+								<div class="p-0 col-12 mt-4">
+									<div class="p-2">
+										<span class="sub-text">
+											Tech nails is a global fashion brand that makes press on nails majorly to beautify the female fingernail
+											and as well as making them express their thoughts and ideas while they slay inform of nail art and
+											calligraphy
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container p-0 mt-4">
+							<div class="p-2">
+								<span class="_y23bns78249">&copy; 2023 All rights reserved. <b>Tech Nails</b></span>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+			<!-- all about footer @e -->
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div class="modal_body_inner">
+								<div class="text-center cart-content">No items in the cart</div>
+								<div class="text-center explore-link-container">
+									<a href="" class="explore">Explore nail designs</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./assets/js/bootstrap.min.js.map"></script>
+		<script type="text/javascript" src="./assets/js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,219 @@
+section {
+	padding: 5rem 0 5rem;
+	overflow-x: hidden;
+}
+
+section.hero {
+	min-height: 440px;
+	background-image: url("../img/nails_15135isnfingers.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 10rem 0;
+	background-size: cover;
+	position: relative;
+}
+section.hero::before {
+	position: absolute;
+	background-color: rgba(0 0 0 / 65%);
+	content: "";
+	inset: 0;
+}
+section.hero .content-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+}
+section.hero .content-container .place-order {
+	padding: 1.1rem 2.2rem;
+	border-radius: 6px;
+	text-transform: uppercase;
+}
+section.hero .content-container .place-order:hover {
+	background-color: var(--primary-clr-dark);
+}
+section.hero .content-container .title {
+	font-size: 2.5rem;
+	color: var(--primary-clr);
+}
+section.hero .content-container .sub-text {
+	color: var(--white);
+}
+@media all and (min-width: 600px) {
+	section.hero .content-container .title {
+		font-size: 3.8rem;
+	}
+}
+/* ========== hero section @e ============ */
+/* ============ who we are section @s================= */
+._w_w_a_container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+._w_w_a_icon {
+	background-color: var(--primary-clr-opacity-1);
+	width: max-content;
+	border: 1px solid var(--primary-clr);
+	padding: 14px;
+	border-radius: 13px;
+}
+._w_w_a_icon svg {
+	width: 1.5rem;
+	height: 1.5rem;
+	position: relative;
+	color: var(--primary-clr);
+}
+._w_w_a_testifier {
+	margin: 1rem 0 0.5rem;
+}
+._w_w_a_title {
+	font-size: 0.98rem;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+._w_w_a_text-value {
+	font-size: 0.8rem;
+}
+/* ============ who we are section @e================= */
+
+section.technicians .sub-text {
+	font-size: 0.9rem;
+}
+section.technicians .grid-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+section.technicians .grid-container .t_9qtsn {
+	text-align: center;
+}
+section.technicians .grid-container .image-container {
+	margin-inline: auto;
+	border-radius: 50%;
+	max-width: 10rem;
+	overflow: hidden;
+}
+section.technicians .view_more {
+	border: 1.5px solid var(--primary-clr);
+	border-radius: 5px;
+	color: var(--primary-clr);
+	padding: 0.8rem 1rem;
+}
+
+/* ============ contact us section @s================= */
+section.i_section header {
+	margin-bottom: 3rem;
+}
+section.i_section header b {
+	font-size: 95%;
+	color: var(--primary-clr);
+}
+section.i_section.contact .image-container img {
+	width: 90%;
+	margin-inline: auto;
+}
+section.i_section .form__inner {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+section.i_section form .form-label {
+	margin-bottom: 3px;
+	line-height: 1;
+	font-size: 0.85rem;
+}
+section.i_section form .submit-btn {
+	margin-top: 1.5rem;
+}
+section.i_section form textarea.form-control {
+	min-height: 8rem;
+}
+section.i_section form .form-control::placeholder {
+	color: var(--text-gray);
+	font-size: 0.8rem;
+}
+section.i_section form .submit-btn button {
+	background-color: var(--primary-clr);
+	color: var(--white);
+	border-radius: 0.3rem;
+	width: 100%;
+	padding: 0.8rem;
+}
+section.i_section form .submit-btn button:hover {
+	background-color: var(--primary-clr-dark);
+}
+section.i_section ._bottomaqe3 {
+	margin: 3rem 0 0;
+	row-gap: 1.4rem;
+}
+section.i_section ._Lq30ef3J b {
+	color: var(--primary-clr);
+}
+section.i_section ._Rq30ef3J .grid-it {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+section.i_section ._Rq30ef3J .grid-it .each-r-out {
+	box-shadow: var(--box-shadow-3);
+	padding: 1.5rem;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.9rem;
+}
+section.i_section ._Rq30ef3J .grid-it .each-r-out:hover {
+	box-shadow: var(--box-shadow-1);
+}
+section.i_section ._Rq30ef3J .each-r-out img {
+	max-width: 2rem;
+}
+section.i_section ._Rq30ef3J .each-r-out span.value {
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: var(--font-clr);
+}
+/* ============ contact us section @e================= */
+
+/* ============ testimony section @e================= */
+section.i_section .t_container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.7rem;
+	justify-content: space-around;
+	position: relative;
+	box-shadow: var(--box-shadow-1);
+	padding: 1.5rem 1rem;
+	border-radius: 8px;
+	height: 100%;
+	aspect-ratio: 16 / 8.5;
+}
+section.i_section .t_container .t_image {
+	border-radius: 99999px;
+	overflow: hidden;
+	max-width: 3rem;
+}
+section.i_section .t_container .t_content .text-value {
+	font-size: 0.8rem;
+	margin-top: -8px;
+}
+section.i_section .t_container .t_testifier {
+	text-align: end;
+	margin-top: 0.9rem;
+}
+section.i_section .t_container .name-value {
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+@media all and (min-width: 768px) {
+	section.i_section .t_container {
+		row-gap: 1.5rem;
+	}
+}
+/* ============ testimony section @e================= */

@@ -1,0 +1,818 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home | Nail Tech</title>
+		<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css.map" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/header.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/general.css" />
+	</head>
+	<body>
+		<div class="body__inner__wrapper">
+			<!-- header @s -->
+			<header class="position-relative nav__wrapper">
+				<div class="row col-12 align-items-center justify-content-between m-0">
+					<div class="logo d-flex align-items-center col-4 col-md-6 col-lg-2 p-0">
+						<a href="">
+							<img src="./assets/img/logo-fake.svg" alt="" class="img-fluid" />
+						</a>
+					</div>
+					<div class="links d-none d-lg-flex align-items-center justify-content-center col-4 col-md-6 col-lg-5 p-0">
+						<a href=""><span>Nail Technician</span></a>
+						<a href=""><span>Shop</span></a>
+						<a href=""><span>About us</span></a>
+					</div>
+					<div class="icons d-flex align-items-center col-4 col-md-6 col-lg-2 p-0">
+						<button type="button" class="icon-item" id="search-button-trigger">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="1.5"
+									d="m17 17l4 4M3 11a8 8 0 1 0 16 0a8 8 0 0 0-16 0Z" />
+							</svg>
+						</button>
+						<button type="button" class="icon-item" id="cart-button-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+								<path
+									fill="currentColor"
+									d="M96 216a16 16 0 1 1-16-16a16 16 0 0 1 16 16Zm88-16a16 16 0 1 0 16 16a16 16 0 0 0-16-16Zm47.65-125.65l-28.53 92.71A23.89 23.89 0 0 1 180.18 184H84.07A24.11 24.11 0 0 1 61 166.59L24.82 40H8a8 8 0 0 1 0-16h16.82a16.08 16.08 0 0 1 15.39 11.6L48.32 64H224a8 8 0 0 1 7.65 10.35ZM213.17 80H52.89l23.49 82.2a8 8 0 0 0 7.69 5.8h96.11a8 8 0 0 0 7.65-5.65Z" />
+							</svg>
+						</button>
+						<a href="" class="icon-item">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+									<path
+										d="M8.25 9a3.75 3.75 0 1 1 7.5 0a3.75 3.75 0 0 1-7.5 0ZM12 6.75a2.25 2.25 0 1 0 0 4.5a2.25 2.25 0 0 0 0-4.5Z" />
+									<path
+										d="M1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12S17.937 22.75 12 22.75S1.25 17.937 1.25 12ZM12 2.75a9.25 9.25 0 0 0-6.558 15.773c.18-.973.535-1.89 1.246-2.628C7.753 14.791 9.454 14.25 12 14.25c2.546 0 4.247.541 5.311 1.645c.712.738 1.066 1.655 1.247 2.629A9.25 9.25 0 0 0 12 2.75Zm5.194 16.905c-.102-1.212-.365-2.1-.962-2.719c-.65-.673-1.853-1.186-4.232-1.186c-2.379 0-3.582.513-4.232 1.186c-.597.62-.86 1.507-.962 2.72A9.207 9.207 0 0 0 12 21.25a9.208 9.208 0 0 0 5.194-1.595Z" />
+								</g>
+							</svg>
+						</a>
+						<button type="button" class="d-lg-none icon-item" id="menu-button-trigger">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-width="1.5"
+									d="M4 7h3m13 0h-9m9 10h-3M4 17h9m-9-5h16" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="position-absolute search-bar-container">
+					<form action="" class="d-flex align-items-center">
+						<div class="d-flex align-items-center flex-grow-1">
+							<input type="search" aria-label="search" class="form-control" id="search-input" placeholder="Enter search..." />
+							<button type="submit" class="search">
+								<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+									<path
+										fill="currentColor"
+										d="m221.66 133.66l-72 72a8 8 0 0 1-11.32-11.32L196.69 136H40a8 8 0 0 1 0-16h156.69l-58.35-58.34a8 8 0 0 1 11.32-11.32l72 72a8 8 0 0 1 0 11.32Z" />
+								</svg>
+							</button>
+						</div>
+						<button type="button" id="close-search-trigger-button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path
+									fill="currentColor"
+									d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275L12 13.4Z" />
+							</svg>
+						</button>
+					</form>
+				</div>
+				<div class="position-absolute w-75 d-lg-none" id="mobile-menu">
+					<ul>
+						<li><a href="">Nail Technician</a></li>
+						<li><a href="">Shop</a></li>
+						<li><a href="">About us</a></li>
+					</ul>
+				</div>
+			</header>
+			<!-- header @e -->
+			<!-- main @s -->
+			<main>
+				<div class="content__wrapper">
+					<!-- individual section @s -->
+					<section class="i_section hero">
+						<div class="row col-12 m-0 align-items-center justify-content-between">
+							<div class="content-container col-10 col-md-6 mx-auto">
+								<div class="content-container text-center">
+									<h1 class="title">Beyond vibes, explore the styles</h1>
+									<span class="sub-text">
+										Speak your mind and express your creativity, all while slaying fashionably and letting your unique style shine
+										through
+									</span>
+									<div class="mt-4">
+										<a href="" class="place-order">Place an order</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- individual section @e -->
+					<!-- individual section @s -->
+					<section class="i_section sign_up">
+						<div class="row col-12 align-items-stretch m-0">
+							<div class="col-md-7 p-0">
+								<div class="image-grid-container position-relative">
+									<div class="image-container">
+										<img src="./assets/img/woman-getting-manicure-top-view.png" alt="" class="img-fluid" />
+									</div>
+									<div class="image-container">
+										<img src="./assets/img/pexels-karolina-grabowska-6954962.jpg" alt="" class="img-fluid" />
+									</div>
+									<div class="image-container">
+										<img src="./assets/img/pexels-karolina-grabowska-6954962.jpg" alt="" class="img-fluid" />
+									</div>
+									<div class="image-container">
+										<img src="./assets/img/pexels-leeloo-thefirst-4677849.jpg" alt="" class="img-fluid" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5 p-0">
+								<div
+									class="image-container-content text-start d-flex align-items-center justify-content-start justify-content-md-center p-3">
+									<div class="col-md-10 mx-md-auto">
+										<div class="icon-image">
+											<img src="./assets/img/nail.png" alt="" class="img-fluid" />
+										</div>
+										<h1 class="title">Are you a Nail technician? <br /><b> Connect, Create, and Thrive </b></h1>
+										<div class="content">
+											<span>Unlock a steady stream of clients, flexible support, and career growth with our partnership.</span>
+											<a href="">Sign up</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- individual section @e -->
+					<!-- individual section @s -->
+					<section class="i_section trending">
+						<div class="container p-0">
+							<header class="mx-auto col-10 col-md-7 my-4 text-center">
+								<h1>Elevate your nail style with our trendy designs !</h1>
+								<div class="mt-2">
+									<span class="sub-text">
+										Discover the latest in nail fashion at our store and elevate your style to the next level
+									</span>
+								</div>
+							</header>
+							<div class="product-container">
+								<div class="row col-12 m-0 align-items-center justify-content-center">
+									<!-- each product@s -->
+									<div class="col-12 col-sm-6 col-lg-3 p-0">
+										<div class="p-3">
+											<div class="p-container">
+												<div class="p-image-container">
+													<img src="./assets/img/image_1.png" alt="" class="img-fluid" />
+												</div>
+												<div class="p-content-container">
+													<b class="p-title">Product Title</b>
+													<div class="e_p">
+														<a class="p-title">Explore</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- each product @s -->
+									<!-- each product@s -->
+									<div class="col-12 col-sm-6 col-lg-3 p-0">
+										<div class="p-3">
+											<div class="p-container">
+												<div class="p-image-container">
+													<img src="./assets/img/image_2.png" alt="" class="img-fluid" />
+												</div>
+												<div class="p-content-container">
+													<b class="p-title">Product Title</b>
+													<div class="e_p">
+														<a href="" class="p-title">Explore</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- each product @s -->
+									<!-- each product@s -->
+									<div class="col-12 col-sm-6 col-lg-3 p-0">
+										<div class="p-3">
+											<div class="p-container">
+												<div class="p-image-container">
+													<img src="./assets/img/image_3.png" alt="" class="img-fluid" />
+												</div>
+												<div class="p-content-container">
+													<b class="p-title">Product Title</b>
+													<div class="e_p">
+														<a href="" class="p-title">Explore</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- each product @s -->
+									<!-- each product@s -->
+									<div class="col-12 col-sm-6 col-lg-3 p-0">
+										<div class="p-3">
+											<div class="p-container">
+												<div class="p-image-container">
+													<img src="./assets/img/image_1.png" alt="" class="img-fluid" />
+												</div>
+												<div class="p-content-container">
+													<b class="p-title">Product Title</b>
+													<div class="e_p">
+														<a href="" class="p-title">Explore</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- each product @s -->
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- individual section @e -->
+					<!-- individual section @s -->
+					<section class="i_section empower">
+						<div class="row col-12 align-items-center justify-content-between m-0">
+							<div class="col-md-6 p-0">
+								<div class="carousel__slider_images">
+									<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+										<div class="carousel-indicators">
+											<button
+												type="button"
+												data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="0"
+												class="active"
+												aria-current="true"
+												aria-label="Slide 1"></button>
+											<button
+												type="button"
+												data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="1"
+												aria-label="Slide 2"></button>
+											<button
+												type="button"
+												data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="2"
+												aria-label="Slide 3"></button>
+											<button
+												type="button"
+												data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="3"
+												aria-label="Slide 4"></button>
+											<button
+												type="button"
+												data-bs-target="#carouselExampleIndicators"
+												data-bs-slide-to="4"
+												aria-label="Slide 5"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<div class="image-container">
+													<img src="./assets/img/pexels-karolina-grabowska-6954962.jpg" class="img-fluid" alt="" />
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="image-container">
+													<img src="./assets/img/pexels-jhong-pascua-3018845.jpg" class="img-fluid" alt="" />
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="image-container">
+													<img src="./assets/img/pexels-jaime-rivera-3598254.jpg" class="img-fluid" alt="" />
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="image-container">
+													<img src="./assets/img/pexels-adrienne-andersen-2661256.jpg" class="img-fluid" alt="" />
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="image-container">
+													<img src="./assets/img/pexels-leeloo-thefirst-4677849.jpg" class="img-fluid" alt="" />
+												</div>
+											</div>
+										</div>
+										<button
+											class="carousel-control-prev"
+											type="button"
+											data-bs-target="#carouselExampleIndicators"
+											data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button
+											class="carousel-control-next"
+											type="button"
+											data-bs-target="#carouselExampleIndicators"
+											data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5 p-0 carousel__slider_content">
+								<div class="content col-md-11 col-lg-12 mx-auto">
+									<h1>Empower yourself today</h1>
+									<span class="sub-text">
+										At our counseling sessions, we tailor our approach to your unique needs, so you can slay through any
+										challenges and achieve your personal growth goals
+									</span>
+									<div class="my-4 mb-md-0 mt-md-4">
+										<a href="" class="c_a_t">Get custom nail art</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- individual section @e -->
+					<!-- individual section @s -->
+					<section class="i_section client_review">
+						<!-- individual section @s -->
+						<div class="container p-0">
+							<header class="mx-auto col-10 col-md-8 col-lg-6 my-4 text-center">
+								<h2>Testimonies from Nail technicians in our community</h2>
+							</header>
+							<div class="row col-12 m-0 align-items-center justify-content-center">
+								<!-- each testimony @s -->
+								<div class="col-md-6 col-lg-4 p-0">
+									<div class="p-3">
+										<div class="t_container">
+											<div class="t_content">
+												<span class="text-value">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem incidunt debitis perspiciatis
+													necessitatibus quaerat natus inventore quia nesciunt.
+												</span>
+												<div class="t_testifier">
+													<b class="name-value">Okeke John Paul</b>
+												</div>
+												<div class="t_rate">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+														<path
+															fill="currentColor"
+															d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
+													</svg>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+														<path
+															fill="currentColor"
+															d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
+													</svg>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+														<path
+															fill="currentColor"
+															d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
+													</svg>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+														<path
+															fill="currentColor"
+															d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 p-0">
+									<div class="p-3">
+										<div class="t_container">
+											<div class="t_content">
+												<span class="text-value">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem incidunt debitis perspiciatis
+													necessitatibus quaerat natus inventore quia nesciunt.
+												</span>
+												<div class="t_testifier">
+													<b class="name-value">Okeke John Paul</b>
+												</div>
+												<div class="t_rate">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+														<path
+															fill="currentColor"
+															d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
+													</svg>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+														<path
+															fill="currentColor"
+															d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
+													</svg>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+														<path
+															fill="currentColor"
+															d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
+													</svg>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+														<path
+															fill="currentColor"
+															d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 p-0">
+									<div class="p-3">
+										<div class="t_container">
+											<div class="t_content">
+												<span class="text-value">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem incidunt debitis perspiciatis
+													necessitatibus quaerat natus inventore quia nesciunt.
+												</span>
+												<div class="t_testifier">
+													<b class="name-value">Okeke John Paul</b>
+												</div>
+												<div class="t_rate">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+														<path
+															fill="currentColor"
+															d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
+													</svg>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+														<path
+															fill="currentColor"
+															d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
+													</svg>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+														<path
+															fill="currentColor"
+															d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
+													</svg>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+														<path
+															fill="currentColor"
+															d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z" />
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- each testimony @e -->
+							</div>
+						</div>
+						<!-- individual section @e -->
+					</section>
+					<!-- individual section @e -->
+
+					<section class="i_section pre_faq">
+						<div class="container p-md-0">
+							<div class="row col-12 m-0 align-items-center justify-content-center flex-column-reverse flex-md-row">
+								<div class="col-md-6 p-0 _R3930fsf">
+									<div class="col-md-10 my-3">
+										<div class="icon my-4">
+											<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+												<path
+													fill="#fed0ac"
+													d="M20.6 35.1c-1.7-2.3-4.2-9.7-1.9-11.4l.7-.5c.4 2.7 1.7 6 2.7 7.4L44.8 62h13.6v-4.3L34.7 24.9c-1.7-2.3-7.9-7-10.2-5.3l-5.7 4.1c-2.4 1.7.1 9.1 1.8 11.4L40 62L20.6 35.1" />
+												<path
+													fill="#e0a372"
+													d="m19.4 23.2l-.7.5c-2.3 1.7.2 9.1 1.9 11.4L40.1 62h4.7L22.1 30.7c-1-1.4-2.3-4.7-2.7-7.5" />
+												<path
+													fill="#fed0ac"
+													d="m48.2 16.7l-5.8 3.5c-2.3 1.4-.5 8.7.9 11l15.1 25.2l-15.1-25.3c-1.4-2.3-3.2-9.6-.9-11l.4-.3c.2 2.5 1.1 5.4 1.9 6.8l13.6 22.6V24.1l-.9-1.5c-1.3-2.3-6.9-7.3-9.2-5.9" />
+												<path
+													fill="#e0a372"
+													d="m42.8 19.9l-.4.3c-2.3 1.4-.5 8.7.9 11l15.1 25.1v-7L44.8 26.7c-.8-1.3-1.8-4.3-2-6.8" />
+												<path
+													fill="#fed0ac"
+													d="m14.3 43.1l-5.1 4.4c-2.1 1.8.9 8.6 2.6 10.7L15 62l-3.3-3.8C9.9 56.1 7 49.3 9.1 47.5l1-.8c.5 2.6 2.1 5.8 3.2 7.1l7 8.3h16.5L24.4 47.4c-1.8-2-8.1-6-10.1-4.3" />
+												<path
+													fill="#e0a372"
+													d="M13.3 53.7c-1.1-1.3-2.7-4.4-3.2-7.1l-1 .8C7 49.2 10 56 11.7 58.1L15 62h5.3l-7-8.3" />
+												<path
+													fill="#ff8736"
+													d="M21.1 32.4c3.4 4.7 7 4.6 10 2.4c3-2.2 4.3-5.5.9-10.3c-3.4-4.7-10-8.7-13-6.5c-3 2.2-1.4 9.7 2.1 14.4" />
+												<path
+													fill="#ffb77b"
+													d="M27.6 27.3c3.1 4.3 3 5.8 4 5c1-.7 2.3-3.1-.8-7.4s-8.8-7-9.8-6.3c-1 .7 3.5 4.5 6.6 8.7" />
+												<path
+													fill="#ff8736"
+													d="M43.9 28.6c2.9 4.8 6.3 4.9 9.3 3.1c3-1.8 4.5-4.9 1.7-9.7c-2.9-4.8-8.8-9-11.8-7.2c-3 1.8-2.1 9 .8 13.8" />
+												<path
+													fill="#ffb77b"
+													d="M50.6 24.3c2.6 4.3 2.4 5.7 3.4 5.1c1-.6 2.4-2.8-.1-7.1c-2.6-4.3-7.8-7.5-8.8-6.9c-1.1.7 2.9 4.6 5.5 8.9" />
+												<path
+													fill="#ff8736"
+													d="M12 55.6c3.6 4.3 7 3.8 9.7 1.5c2.7-2.3 3.7-5.6.1-9.8C18.2 43 11.7 39.8 9 42.1c-2.8 2.3-.6 9.2 3 13.5" />
+												<path
+													fill="#ffb77b"
+													d="M17.8 50.3c3.2 3.8 3.3 5.3 4.2 4.5c.9-.8 2-3.1-1.3-7c-3.2-3.8-8.9-6.1-9.8-5.4c-.9.8 3.7 4 6.9 7.9" />
+												<path
+													fill="#ff8736"
+													d="M21.3 27.5s-1.3-.8-3-2.3c.4-.2.7-.4.9-.7c0 0-7.9-5.6-9.8-17.8c0 0-3.9 8.5-3.9 15.7c0 8.4 8.9 11 12.1 7.8c0 0-.7-.5-1.6-1.4c2.2.2 4.1-.3 5.3-1.3" />
+												<path
+													fill="#d8681d"
+													d="M22.1 26.8s-2-.1-3.7-1.6c0 0 1.5.1 2.1-.7c0 0-9-5.6-10.9-17.8c0 0-.6 1.3-1.3 3.2C10 21.5 17 24.5 17 24.5c-.3.3-5-.9-5-.9c1.5 2.3 7.3 3.6 7.3 3.6c-4.9 1.1-9-.6-9-.6c1 2.5 5 3.7 5 3.7s-1.2 1.1-3.4.9c2.3.7 4.6.4 5.9-1c0 0-.7-.5-1.6-1.4c2 .2 4.7-.3 5.9-2" />
+												<path fill="#454749" d="M7 2h4.5v11.5H7z" />
+											</svg>
+										</div>
+										<h1 class="title">Nail your look with our talented Nail technicians.</h1>
+									</div>
+									<span class="sub-text flex align-items-center">
+										<span class="me-1">Book now and flaunt fabulous nails </span>
+										<img src="./assets/img/magic.png" alt="" class="img-fluid" />
+									</span>
+									<div class="mt-4">
+										<a href="" class="book_now"> Book now </a>
+									</div>
+								</div>
+								<div class="col-md-6 p-0 _L3930fsf">
+									<div class="image-container">
+										<img
+											src="./assets/img/crop-trendy-leather-pink-bag-holding-two-hands-girls-with-design-manicure-it-showing-camera-female-hands-with-elegance-silver-rings-concept-manicure-fashion-accessories.png"
+											alt=""
+											class="img-fluid" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- individual section @e -->
+					<!-- individual section @s -->
+					<section class="i_section faq">
+						<div class="container p-md-0">
+							<div class="col-md-12 col-lg-10 p-0 mx-auto">
+								<div class="title-container text-center">
+									<h2>Frequently asked questions</h2>
+								</div>
+								<div class="accordion__container col-md-10 mx-auto">
+									<div class="accordion accordion-flush" id="accordionFlushExample">
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="flush-headingOne">
+												<button
+													class="accordion-button collapsed"
+													type="button"
+													data-bs-toggle="collapse"
+													data-bs-target="#flush-collapseOne"
+													aria-expanded="false"
+													aria-controls="flush-collapseOne">
+													Question asked 1
+												</button>
+											</h2>
+											<div
+												id="flush-collapseOne"
+												class="accordion-collapse collapse"
+												aria-labelledby="flush-headingOne"
+												data-bs-parent="#accordionFlushExample">
+												<div class="accordion-body">
+													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum soluta nobis, voluptate illo
+													aperiam! Minima officia doloribus, atque velit assumenda porro fugit nam quaerat modi, alias
+													numquam hic odio!
+												</div>
+											</div>
+										</div>
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="flush-headingTwo">
+												<button
+													class="accordion-button collapsed"
+													type="button"
+													data-bs-toggle="collapse"
+													data-bs-target="#flush-collapseTwo"
+													aria-expanded="false"
+													aria-controls="flush-collapseTwo">
+													Question asked 2
+												</button>
+											</h2>
+											<div
+												id="flush-collapseTwo"
+												class="accordion-collapse collapse"
+												aria-labelledby="flush-headingTwo"
+												data-bs-parent="#accordionFlushExample">
+												<div class="accordion-body">
+													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum soluta nobis, voluptate illo
+													aperiam! Minima officia doloribus, atque velit assumenda porro fugit nam quaerat modi, alias
+													numquam hic odio!
+												</div>
+											</div>
+										</div>
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="flush-headingThree">
+												<button
+													class="accordion-button collapsed"
+													type="button"
+													data-bs-toggle="collapse"
+													data-bs-target="#flush-collapseThree"
+													aria-expanded="false"
+													aria-controls="flush-collapseThree">
+													Question asked 3
+												</button>
+											</h2>
+											<div
+												id="flush-collapseThree"
+												class="accordion-collapse collapse"
+												aria-labelledby="flush-headingThree"
+												data-bs-parent="#accordionFlushExample">
+												<div class="accordion-body">
+													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum soluta nobis, voluptate illo
+													aperiam! Minima officia doloribus, atque velit assumenda porro fugit nam quaerat modi, alias
+													numquam hic odio!
+												</div>
+											</div>
+										</div>
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="flush-headingFour">
+												<button
+													class="accordion-button collapsed"
+													type="button"
+													data-bs-toggle="collapse"
+													data-bs-target="#flush-collapseFour"
+													aria-expanded="false"
+													aria-controls="flush-collapseFour">
+													Question asked 4
+												</button>
+											</h2>
+											<div
+												id="flush-collapseFour"
+												class="accordion-collapse collapse"
+												aria-labelledby="flush-headingFour"
+												data-bs-parent="#accordionFlushExample">
+												<div class="accordion-body">
+													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum soluta nobis, voluptate illo
+													aperiam! Minima officia doloribus, atque velit assumenda porro fugit nam quaerat modi, alias
+													numquam hic odio!
+												</div>
+											</div>
+										</div>
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="flush-headingFive">
+												<button
+													class="accordion-button collapsed"
+													type="button"
+													data-bs-toggle="collapse"
+													data-bs-target="#flush-collapseFive"
+													aria-expanded="false"
+													aria-controls="flush-collapseFive">
+													Question asked 5
+												</button>
+											</h2>
+											<div
+												id="flush-collapseFive"
+												class="accordion-collapse collapse"
+												aria-labelledby="flush-headingFive"
+												data-bs-parent="#accordionFlushExample">
+												<div class="accordion-body">
+													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum soluta nobis, voluptate illo
+													aperiam! Minima officia doloribus, atque velit assumenda porro fugit nam quaerat modi, alias
+													numquam hic odio!
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- individual section @e -->
+				</div>
+			</main>
+			<!-- main @e -->
+			<!-- all about footer @s -->
+			<div>
+				<div class="pre__footer">
+					<div class="col-10 col-md-8 col-lg-6 mx-auto text-center">
+						<h2>Subscribe to our newsletter</h2>
+						<div class="mail_subscription">
+							<form action="">
+								<div class="d-flex align-items-center flex-wrap flex-sm-nowrap justify-content-center mt-4">
+									<input
+										type="email"
+										aria-label="email"
+										class="form-control"
+										id="search-input"
+										placeholder="Enter your email address" />
+									<button type="submit" class="search">
+										<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+											<path
+												fill="currentColor"
+												d="M224 50H32a6 6 0 0 0-6 6v136a14 14 0 0 0 14 14h176a14 14 0 0 0 14-14V56a6 6 0 0 0-6-6Zm-96 85.86L47.42 62h161.16ZM101.67 128L38 186.36V69.64Zm8.88 8.14L124 148.42a6 6 0 0 0 8.1 0l13.4-12.28L208.58 194H47.43Zm43.78-8.14L218 69.64v116.72Z" />
+										</svg>
+										<span>Subscribe</span>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<div class="footer__inner">
+						<div class="container p-0">
+							<div class="row col-12 m-0 align-items-start footer_item_container">
+								<div class="p-0 col-lg col-12 col-sm-6">
+									<div class="p-2 logo">
+										<a href="">
+											<img src="./assets/img/logo-fake.svg" alt="" class="img-fluid" />
+										</a>
+									</div>
+								</div>
+								<div class="p-0 col-lg col-12 col-sm-6">
+									<div class="p-2">
+										<h6 class="title">Company</h6>
+										<ul class="sub-links">
+											<li><a href="">About us</a></li>
+											<li><a href="">Contact us</a></li>
+											<li><a href="">FAQ</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="p-0 col-lg col-12 col-sm-6">
+									<div class="p-2">
+										<h6 class="title">Services</h6>
+										<ul class="sub-links">
+											<li><a href="">Shop</a></li>
+											<li><a href="">Book a sessio</a></li>
+											<li><a href="">Nail Tech Connect</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="p-0 col-lg col-12 col-sm-6">
+									<div class="p-2 social_links">
+										<span class="title">Follow us on social media</span>
+										<ul class="sub-links d-flex align-items-center">
+											<a href="">
+												<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+													<path
+														fill="currentColor"
+														d="M216 26H40a14 14 0 0 0-14 14v176a14 14 0 0 0 14 14h176a14 14 0 0 0 14-14V40a14 14 0 0 0-14-14Zm2 190a2 2 0 0 1-2 2H40a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2h176a2 2 0 0 1 2 2ZM94 112v64a6 6 0 0 1-12 0v-64a6 6 0 0 1 12 0Zm88 28v36a6 6 0 0 1-12 0v-36a22 22 0 0 0-44 0v36a6 6 0 0 1-12 0v-64a6 6 0 0 1 12 0v2.11A34 34 0 0 1 182 140ZM98 84a10 10 0 1 1-10-10a10 10 0 0 1 10 10Z" />
+													aaa
+												</svg>
+											</a>
+											<a href="">
+												<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+													<path
+														fill="currentColor"
+														d="M128 26a102 102 0 1 0 102 102A102.12 102.12 0 0 0 128 26Zm6 191.8V150h26a6 6 0 0 0 0-12h-26v-26a18 18 0 0 1 18-18h16a6 6 0 0 0 0-12h-16a30 30 0 0 0-30 30v26H96a6 6 0 0 0 0 12h26v67.8a90 90 0 1 1 12 0Z" />
+												</svg>
+											</a>
+											<a href="">
+												<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+													<path
+														fill="currentColor"
+														d="M128 82a46 46 0 1 0 46 46a46.06 46.06 0 0 0-46-46Zm0 80a34 34 0 1 1 34-34a34 34 0 0 1-34 34Zm48-136H80a54.06 54.06 0 0 0-54 54v96a54.06 54.06 0 0 0 54 54h96a54.06 54.06 0 0 0 54-54V80a54.06 54.06 0 0 0-54-54Zm42 150a42 42 0 0 1-42 42H80a42 42 0 0 1-42-42V80a42 42 0 0 1 42-42h96a42 42 0 0 1 42 42ZM190 76a10 10 0 1 1-10-10a10 10 0 0 1 10 10Z" />
+												</svg>
+											</a>
+											<a href="">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+													<path
+														fill="currentColor"
+														d="M22.5 3.589a.5.5 0 0 0-.755-.43a7.938 7.938 0 0 1-2.266.912a4.662 4.662 0 0 0-3.238-1.29a4.731 4.731 0 0 0-4.707 5.135a11.527 11.527 0 0 1-7.717-4.18a.5.5 0 0 0-.82.067a4.777 4.777 0 0 0-.633 2.377a4.724 4.724 0 0 0 .762 2.579l-.06-.033a.504.504 0 0 0-.497.03a.543.543 0 0 0-.247.458c-.004.118.003.237.022.353a4.692 4.692 0 0 0 1.818 3.383a.5.5 0 0 0-.335.632a4.704 4.704 0 0 0 3.088 3.057a7.998 7.998 0 0 1-4.854.963a.5.5 0 0 0-.332.917A12.442 12.442 0 0 0 8.468 20.5a12.299 12.299 0 0 0 11.986-9.006c.339-1.137.512-2.318.514-3.505c0-.12 0-.245-.003-.372A5.37 5.37 0 0 0 22.5 3.59zm-2.424 3.533a.498.498 0 0 0-.117.349a11.366 11.366 0 0 1-.464 3.741A11.174 11.174 0 0 1 8.468 19.5a11.45 11.45 0 0 1-4.443-.897a8.867 8.867 0 0 0 4.525-1.86a.5.5 0 0 0-.3-.893A3.71 3.71 0 0 1 5.1 14c.425.001.847-.057 1.254-.174a.5.5 0 0 0-.042-.97a3.706 3.706 0 0 1-2.905-2.898a4.72 4.72 0 0 0 1.313.228a.473.473 0 0 0 .492-.35a.5.5 0 0 0-.2-.567a3.696 3.696 0 0 1-1.648-3.09c0-.413.067-.823.2-1.213a12.515 12.515 0 0 0 8.54 3.995a.45.45 0 0 0 .409-.179a.5.5 0 0 0 .103-.434a3.642 3.642 0 0 1-.1-.842A3.73 3.73 0 0 1 16.24 3.78a3.68 3.68 0 0 1 2.71 1.179a.499.499 0 0 0 .462.148a8.94 8.94 0 0 0 2.055-.671a4.92 4.92 0 0 1-1.392 2.686z" />
+												</svg>
+											</a>
+										</ul>
+									</div>
+								</div>
+								<div class="p-0 col-12 mt-4">
+									<div class="p-2">
+										<span class="sub-text">
+											Tech nails is a global fashion brand that makes press on nails majorly to beautify the female fingernail
+											and as well as making them express their thoughts and ideas while they slay inform of nail art and
+											calligraphy
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container p-0 mt-4">
+							<div class="p-2">
+								<span class="_y23bns78249">&copy; 2023 All rights reserved. <b>Tech Nails</b></span>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+			<!-- all about footer @e -->
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div class="modal_body_inner">
+								<div class="text-center cart-content">No items in the cart</div>
+								<div class="text-center explore-link-container">
+									<a href="" class="explore">Explore nail designs</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./assets/js/bootstrap.min.js.map"></script>
+		<script type="text/javascript" src="./assets/js/index.js"></script>
+	</body>
+</html>

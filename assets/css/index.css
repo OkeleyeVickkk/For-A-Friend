@@ -12,6 +12,7 @@ section {
 section.hero {
 	min-height: 440px;
 	background-image: url("../img/pexels-kureng-workx-7638958.jpg");
+	background-color: var(--primary-clr);
 	background-position: center center;
 	background-repeat: no-repeat;
 	padding: 10rem 0;
